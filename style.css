@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.links:hover{
+ text-decoration: underline;
+}
+.box{
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+
+}
+input{
+    border: none;
+    font-size: 15px;
+    height: 36px;
+    width: 150px ;
+    outline: none;
+}
+.searchicon{
+    padding: 10px;
+   
+    background-color: yellow;
+}
+.searchicon:hover{
+  cursor: pointer;
+  
+}
+.area{
+    padding: 10px;
+}
+.icon{
+    color: white;
+    margin-right: 50px;
+}
+.icon:hover{
+    
+    color: yellow;
+}
+#food{
+    font-family: "Bona Nova SC", serif;
+  
+}
+#para{
+    font-family: "Sacramento", cursive;
+    color: rgb(155, 155, 34);
+}
+.dining{
+    font-family: "Sacramento", serif;
+}
+.design{
+    
+    font-family: "Bona Nova SC", serif;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    display: none;
+    cursor: pointer;
+    margin-right: 0px;
+    line-height: 80px;
+    
+}
+#check{
+display: none;
+}
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+       display: block;
+     
+    }
+    .links{
+      display: block;
+
+    }
+   
+    .list{
+        font-size: 20px;
+    display: block;
+
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+    .gallery{
+        margin-top: 220px;
+    }
+   
+}
